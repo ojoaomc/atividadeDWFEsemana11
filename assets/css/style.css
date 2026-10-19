@@ -1,0 +1,157 @@
+* {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+header {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: .5rem;
+    background-color: #674ea7;
+    color: white;
+}
+
+.titulo {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+/* Menu lateral */
+nav {
+    height: 100vh;
+    width: 15rem;
+    background-color: #eee;
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.opcao {
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    background-color: #ddd;
+    color: black;
+}
+
+.form-pesquisa-filtro {
+    position: absolute;
+    top: 5rem;
+    right: 1.5rem;   
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex: 1;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 15rem;
+    box-shadow: .3rem .3rem 0.3rem 0.03rem #eee;
+    height: fit-content;
+}
+
+.imagem-do-cartao {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 2/1.3;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.corpo-do-cartao {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    margin-top: .5rem;
+    gap: .5rem;
+}
+
+.nome-da-opcao {
+    font-weight: bold;
+}
+
+.descricao-da-opcao {
+    font-style: italic;
+    color: grey;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: .8rem;
+    padding: 1rem;
+    margin-top: 2.5rem;
+}
+
+/* Links nos cards */
+.cartao a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cartao a:hover {
+    text-decoration: underline;
+}
+
+/* Página Detalhes */
+.container-detalhes {
+    flex: 1;
+    padding: 1rem;
+}
+
+.cartao-detalhe {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    max-width: 40rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.03rem #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.imagem-detalhes {
+    width: 100%;
+    max-height: 25rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.categoria-tag {
+    color: #674ea7;
+}
+
+.conteudo-texto {
+    line-height: 1.6;
+    color: #333;
+}
+
+.botao-voltar {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #674ea7;
+    font-weight: bold;
+}

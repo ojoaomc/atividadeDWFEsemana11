@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuiaBH - Home</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">GuiaBH - O guia para quem quer diversificar</h1>
+        <form class="form-pesquisa-header">
+            <div class="campo-busca">
+                <label for="busca-site" class="sr-only">Pesquisar no site:</label>
+                <input type="text" id="busca-site" name="busca" placeholder="Pesquisar">
+            </div>
+        </form>
+    </header>
+    
+    <section>
+        <nav>
+            <ul class="menu-lateral">
+                <li>
+                    <a href="index.html">
+                        <div class="opcao">
+                            <div class="rotulo">Início</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="opcao">
+                            <div class="rotulo">Itens salvos</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="opcao">
+                            <div class="rotulo">Favoritos</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <form class="form-pesquisa-filtro">
+            <div class="campo-filtro">
+                <label for="filtro-tipo" class="sr-only">Filtrar por:</label>
+                <input type="text" id="filtro-tipo" name="filtro" placeholder="Ex: Cachoeira, Museu...">
+            </div>
+            <button type="submit" class="botao-pesquisa">Buscar</button>
+        </form>
+
+        <main id="cartoes" class="container"></main>
+    </section>
+
+    <footer>&copy; GuiaBH, 2026</footer>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
